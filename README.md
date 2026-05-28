@@ -84,6 +84,12 @@ Your `.xlsx` file must contain these columns (case-insensitive, any order):
 python manage.py test lab --verbosity=2
 ```
 
+Note - you may need create staticfiles first to run the unit tests:
+
+```bash
+python manage.py collectstatic --noinput 2>&1
+```
+
 All existing tests must continue to pass after your changes.
 
 ---
